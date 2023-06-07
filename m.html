@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <link rel="stylesheet" type="text/css" href="m.css">
+</head>
+<body>
+    <center><h2>Music Player App</h2></center>
+  <div id="player">
+    <audio id="audioPlayer"></audio>
+    <div id="controls">
+      <button id="playButton" onclick="togglePlay()">Play</button>
+      <button id="pauseButton" onclick="togglePlay()">Pause</button>
+      <button id="stopButton" onclick="stop()">Stop</button>
+    </div>
+    <div id="playlist">
+      <ul>
+        
+        <li onclick="playSong('AGBABAKET.mp3')">Song 1: AGBABAKET - Ilocano Song</li>
+        <li onclick="playSong('ISEM.mp3')">Song 2: ISEM - Ilocano song</li>
+        <li onclick="playSong('SIGAY.mp3')">Song 3: SIGAY - Ilocano Song</li>
+      </ul>
+    </div>
+  </div>
+  <script src="m.js"></script>
+</body>
+</html>
